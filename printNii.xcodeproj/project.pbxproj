@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		399DC99D24FC2EEB00F834A1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DC99C24FC2EEB00F834A1 /* main.swift */; };
+		399DC9A424FC4A2B00F834A1 /* cInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DC9A324FC4A2B00F834A1 /* cInterface.swift */; };
+		399DC9A624FC4C6200F834A1 /* niiInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DC9A524FC4C6200F834A1 /* niiInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		399DC99924FC2EEB00F834A1 /* printNii */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = printNii; sourceTree = BUILT_PRODUCTS_DIR; };
 		399DC99C24FC2EEB00F834A1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		399DC9A324FC4A2B00F834A1 /* cInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cInterface.swift; sourceTree = "<group>"; };
+		399DC9A524FC4C6200F834A1 /* niiInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = niiInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				399DC99C24FC2EEB00F834A1 /* main.swift */,
+				399DC9A324FC4A2B00F834A1 /* cInterface.swift */,
+				399DC9A524FC4C6200F834A1 /* niiInterface.swift */,
 			);
 			path = printNii;
 			sourceTree = "<group>";
@@ -121,6 +127,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				399DC99D24FC2EEB00F834A1 /* main.swift in Sources */,
+				399DC9A624FC4C6200F834A1 /* niiInterface.swift in Sources */,
+				399DC9A424FC4A2B00F834A1 /* cInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
