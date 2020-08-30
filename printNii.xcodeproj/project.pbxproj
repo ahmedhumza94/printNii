@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		399DC99D24FC2EEB00F834A1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DC99C24FC2EEB00F834A1 /* main.swift */; };
 		399DC9A424FC4A2B00F834A1 /* cInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DC9A324FC4A2B00F834A1 /* cInterface.swift */; };
 		399DC9A624FC4C6200F834A1 /* niiInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DC9A524FC4C6200F834A1 /* niiInterface.swift */; };
+		399DC9A924FC5D3900F834A1 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 399DC9A824FC5D3900F834A1 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				399DC9A924FC5D3900F834A1 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,9 @@
 			dependencies = (
 			);
 			name = printNii;
+			packageProductDependencies = (
+				399DC9A824FC5D3900F834A1 /* ArgumentParser */,
+			);
 			productName = printNii;
 			productReference = 399DC99924FC2EEB00F834A1 /* printNii */;
 			productType = "com.apple.product-type.tool";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 399DC99024FC2EEB00F834A1;
+			packageReferences = (
+				399DC9A724FC5D3900F834A1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 399DC99A24FC2EEB00F834A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,6 +296,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		399DC9A724FC5D3900F834A1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		399DC9A824FC5D3900F834A1 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 399DC9A724FC5D3900F834A1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 399DC99124FC2EEB00F834A1 /* Project object */;
 }
