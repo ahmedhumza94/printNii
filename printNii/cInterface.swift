@@ -37,7 +37,6 @@ func readBytes(from file: String, nbytes: Int) -> [UInt8] {
     // of UInt8 values
     
     let fid = fopen(file,"r")
-    print(fid)
     // Read n bytes from file and refrence in pointer
     let pointer = UnsafeMutableRawPointer.allocate(byteCount: nbytes, alignment: 8)
     fread(pointer,nbytes,1, fid)
