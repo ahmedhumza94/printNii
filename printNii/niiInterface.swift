@@ -61,7 +61,7 @@ let niiMap: [String: (offset: Int,size: [CStorageSize])] = [
     "magic": (344,Array(repeating: ccharsize, count: 4))
 ]
 
-struct niiHdr {
+struct NiiHdr {
     let hdr: [String: [CStore?]]
     init(_ file: String) {
         let data = readBytes(from: file, nbytes: 348)

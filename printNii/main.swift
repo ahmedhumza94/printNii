@@ -6,10 +6,20 @@
 //  Copyright © 2020 Humza Ahmed. All rights reserved.
 //
 
-import Foundation
+import ArgumentParser
 
-let testHdr = niiHdr("/Users/humza/Desktop/test.nii")
-for (field, value) in testHdr.hdr {
-    print(field)
-    print(printCStoreArray(value))
+struct printNii: ParsableCommand {
+    @Argument(help: "Nii filename")
+    var file: String
+    
+    mutating func run() throws {
+        let niiHdr = NiiHdr(file)
+        var text: String
+        for (field, value) in niiHdr.hdr {
+            text = field + ": " + printCStoreArray(value)
+            print(text)
+        }
+    }
 }
+
+printNii.main()
