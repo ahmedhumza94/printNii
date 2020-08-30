@@ -62,11 +62,9 @@ let niiMap: [String: (offset: Int,size: [CStorageSize])] = [
 ]
 
 struct niiHdr {
-  //  var file: String
-    var hdr: [String: [CStore?]]
-    
-    init() {
-        let data = readBytes(from: "/Users/humza/Desktop/test.nii", nbytes: 348)
+    let hdr: [String: [CStore?]]
+    init(_ file: String) {
+        let data = readBytes(from: file, nbytes: 348)
         let barr = makeBinaryArray(from: data)
         self.hdr = mapBinaryHdr(from: niiMap, with: barr)
     }

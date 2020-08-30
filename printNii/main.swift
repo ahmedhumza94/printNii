@@ -8,7 +8,7 @@
 
 import Foundation
 
-let testHdr = niiHdr()
+let testHdr = niiHdr("/Users/humza/Desktop/test.nii")
 for (field, value) in testHdr.hdr {
     print(field)
     print(printCStoreArray(value))
