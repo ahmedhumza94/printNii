@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
-
+let testHdr = niiHdr()
+for (field, value) in testHdr.hdr {
+    print(field)
+    print(printCStoreArray(value))
+}
