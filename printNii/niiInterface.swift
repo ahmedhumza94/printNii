@@ -54,9 +54,9 @@ let niiMap: [String: (offset: Int,size: [CStorageSize])] = [
     "qoffset_x": (268,[cfloatsize]),
     "qoffset_y": (272,[cfloatsize]),
     "qoffset_z": (276,[cfloatsize]),
-    "srow_x": (280,[cfloatsize]),
-    "srow_y": (296,[cfloatsize]),
-    "srow_z": (312,[cfloatsize]),
+    "srow_x": (280,Array(repeating: cfloatsize, count: 4)),
+    "srow_y": (296,Array(repeating: cfloatsize, count: 4)),
+    "srow_z": (312,Array(repeating: cfloatsize, count: 4)),
     "intent_name": (328,Array(repeating: ccharsize, count: 16)),
     "magic": (344,Array(repeating: ccharsize, count: 4))
 ]
